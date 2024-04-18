@@ -7,7 +7,7 @@ body {
 
 .login-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
 }
@@ -17,34 +17,54 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 25%; /* aumentamos el ancho para un aspecto más similar */
 }
 
-.login-box h2 {
+._97vy{
+    width: 50%;
+    justify-content: center;
     text-align: center;
+}
+
+._97vu.img {
+    width: 50%; /* Tamaño de la imagen */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.login-box p {
+    text-align: center;
+    font-size: 18px;
     margin-bottom: 20px;
+    font-family: inherit;
+    color: black;
+    /* color: #1877f20; color azul similar al de Facebook */
 }
 
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* aumentamos el espacio entre los campos */
 }
 
 .input-group input {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #ccc;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd; /* color de borde más claro */
     border-radius: 5px;
+    font-size: 16px; /* aumentamos el tamaño de la fuente */
+    box-sizing: border-box;
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #1877f2;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
 button:hover {
@@ -53,6 +73,8 @@ button:hover {
 
 p {
     text-align: center;
+    margin-bottom: 20px; /* aumentamos el espacio entre los párrafos */
+    color: #606770; /* color de texto más claro */
 }
 
 a {
